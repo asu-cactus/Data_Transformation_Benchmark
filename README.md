@@ -1,4 +1,5 @@
 # Data_Transformation_Benchmark
+This repository contains the data transformation benchmark for various domains such as smart building, COVID-19 & machine log and commercial datasets. 
 ## Benchmark Datasets
 - `Smart Building` : Smart building dataset is curated from real-world domain specific databases. This makes total 15 groups for 105 total cases from 21 energy companies in the United States.
 
@@ -8,7 +9,7 @@
 
 - `Commertial dataset-2` :  This consists of eight groups of join transformation from exisitng Autopipeline benchmark {[Link](https://gitlab.com/jwjwyoung/autopipeline-benchmarks/-/tree/main/commercial-pipelines?ref_type=heads)}. 
 
-Below is table for
+Below is table for benchmark and respective number of groups and total number of cases.
 
 | Datasets      | Number of Groups | Total cases |
 | ------------- |:-------------:| -----:|
@@ -77,7 +78,5 @@ Below is table for
 
 
 ## How to extend our benchmark
-You can build your own dataset following the [Structure Of Datasets](#structure-of-datasets) to extend this benchmark.
-
-
-The new spreadsheet muct have above explained structure of the datasets. 
+You can build your own dataset following the [Structure Of Datasets](#structure-of-datasets) to extend this benchmark and execute above explained steps. 
+Note: The new spreadsheet must have above explained structure of the datasets. 
