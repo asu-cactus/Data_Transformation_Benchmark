@@ -17,8 +17,6 @@ Below is table for
 | Commertial-1 | 8    |    8 |
 | Commertial-2 | 8    |    8 |
 
-- Dataset is 
-
 ## Structure Of Datasets
 
 - `Group Number` is number for each group in the benchmark dataset. 
