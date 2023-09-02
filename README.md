@@ -3,28 +3,28 @@ This repository contains the data transformation benchmark for various domains s
 ## Benchmark Datasets
 - `Smart Building` : Smart building dataset is curated from real-world domain specific databases. This makes total 15 groups for 105 total cases from 21 energy companies in the United States.
 
-- `COVID-19 & Machine Log` : COVID-19 datasets is real-world data repository maintianed by John Hopkins University {[Link](csse_covid_19_data)}. Machine log dataset is curated from various operating systems such as MacOS, Android etc. 
+- `COVID-19 & Machine Log` : COVID-19 datasets is real-world data repository maintained by John Hopkins University {[Link](csse_covid_19_data)}. Machine log dataset is curated from various operating systems such as MacOS, Android etc. 
 
-- `Commertial dataset-1` : This consists of eight groups of single-table transformation from exisitng Autopipeline benchmark {[Link](https://gitlab.com/jwjwyoung/autopipeline-benchmarks/-/tree/main/commercial-pipelines?ref_type=heads)}.
+- `Commercial dataset-1` : This consists of eight groups of single-table transformation from existing Auto-Pipeline benchmark {[Link](https://gitlab.com/jwjwyoung/autopipeline-benchmarks/-/tree/main/commercial-pipelines?ref_type=heads)}.
 
-- `Commertial dataset-2` :  This consists of eight groups of join transformation from exisitng Autopipeline benchmark {[Link](https://gitlab.com/jwjwyoung/autopipeline-benchmarks/-/tree/main/commercial-pipelines?ref_type=heads)}. 
+- `Commercial dataset-2` :  This consists of eight groups of join transformation from existing Auto-Pipeline benchmark {[Link](https://gitlab.com/jwjwyoung/autopipeline-benchmarks/-/tree/main/commercial-pipelines?ref_type=heads)}. 
 
-Below is table for benchmark and respective number of groups and total number of cases.
+Below is the table for benchmark and respective number of groups and total number of cases.
 
 | Datasets      | Number of Groups | Total cases |
 | ------------- |:-------------:| -----:|
 | Smart Building      | 15 | 105 |
 | COVID-19 & Machine Log      | 2      |  6 |
-| Commertial-1 | 8    |    8 |
-| Commertial-2 | 8    |    8 |
+| Commercial-1 | 8    |    8 |
+| Commercial-2 | 8    |    8 |
 
 ## Structure Of Datasets
 
-- `Group Number` is number for each group in the benchmark dataset. 
-- `Target Data Name` is given name to transformed dataset. The representation is "Target'Group Number'" e.g. Target1 represents target data name for Group 1.
+- `Group Number` is the number for each group in the benchmark dataset. This is denoted as 'Group_ID'.
+- `Target Data Name` is given name to transformed dataset. The representation is "Target'{$Group_ID}'" e.g. Target_1 represents target data name for Group 1.
 - `Target Data Schema` is transformed schema. 
 - `Target Data Description` is domain specific explanation about dataset. 
-- `Source Data Name` is given name for dataset to be transformed. The representation is "Source'Group Number_SourceNumber'" e.g. Source1_1 represents source data name for Group 1 for source 1. 
+- `Source Data Name` is given name for dataset to be transformed. The representation is "Source'{$Group_ID}_{$Source_ID}'" e.g. Source1_1 represents source data name for Group 1 for Source 1. 
 - `Source Data Schema` is schema to be transformed. 
 - `Source Data Description` is domain specific explanation about dataset. 
 - `Schema Change Hints` are hints about changes in schema from source to target. 
@@ -51,7 +51,7 @@ Below is table for benchmark and respective number of groups and total number of
     ```
     OPENAI_API_KEY = "{your_openai_api_key}"
     ```
-5. Pick a dataset from {‘Smart Building’, ‘COVID-19 & Machine Log’,Commercial dataset-1’, ‘Commercial dataset-2’} and change the ‘excel_file_path’ and ‘json_file_path’ in ‘excel2json.py’ accordingly.
+5. Pick a dataset from {‘Smart Building’, ‘COVID-19 & Machine Log’,Commercial dataset-1’, ‘Commercial dataset-2’}. To view the .xlsx files, you can download them and open using Microsoft Excel or any other supporting tool. Save these files in a folder and change the ‘excel_file_path’ and ‘json_file_path’ in ‘excel2json.py’ accordingly.
     ```
     # Path to the Excel file
     excel_file_path = '<dataset_you_picked>.xlsx'
@@ -78,5 +78,6 @@ Below is table for benchmark and respective number of groups and total number of
 
 
 ## How to extend our benchmark
-You can build your own dataset following the [Structure Of Datasets](#structure-of-datasets) to extend this benchmark and execute above explained steps. 
-Note: The new spreadsheet must have above explained structure of the datasets. 
+You can build your own dataset following the [Structure Of Datasets](#structure-of-datasets) to extend this benchmark and execute above explained steps.
+
+Note: The new dataset must have above explained structure of the datasets. 
