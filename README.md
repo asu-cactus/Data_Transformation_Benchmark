@@ -8,7 +8,7 @@ This repository contains the data transformation benchmark for various domains s
 
 - `Commercial dataset-1`: This consists of eight groups of single-table transformation from existing Auto-Pipeline benchmark {[Link](https://gitlab.com/jwjwyoung/autopipeline-benchmarks/-/tree/main/commercial-pipelines?ref_type=heads)}.
 
-- `Commercial dataset-2`:  This consists of eight groups of join transformation from existing Auto-Pipeline benchmark {[Link](https://gitlab.com/jwjwyoung/autopipeline-benchmarks/-/tree/main/commercial-pipelines?ref_type=heads)}. 
+- `Commercial dataset-2`:  This consists of eight groups of **Join** transformation from existing Auto-Pipeline benchmark {[Link](https://gitlab.com/jwjwyoung/autopipeline-benchmarks/-/tree/main/commercial-pipelines?ref_type=heads)}. 
 
 Below is the table recording the respective number of groups and total number of cases for the benchmark.
 
@@ -21,11 +21,11 @@ Below is the table recording the respective number of groups and total number of
 
 ## Structure Of Datasets
 
-- `Group Number` is the number for each group in the benchmark dataset. This is denoted as 'Group_ID'.
+- `Group Number` is the number for each group in the benchmark dataset. This is denoted as 'Group_ID'. Each group has one target schema, and multiple source datasets. Each source dataset needs to be transformed to conform to the target schema separately.
 - `Target Data Name` is given name to the transformed dataset. The representation is "Target'{$Group_ID}'" e.g. Target_1 represents the target data name for Group 1.
 - `Target Data Schema` is the expected schema of the target dataset. 
 - `Target Data Description` is a domain-specific explanation of the dataset. 
-- `Source Data Name` is the given name for the source dataset that is to be transformed. The representation is "Source'{$Group_ID}_{$Source_ID}'" e.g., Source1_1 represents the source data name for Group 1 for Source 1. 
+- `Source Data Name` is the given name for the source dataset that is to be transformed. The representation is "Source'{$Group_ID}_{$Source_ID}'" e.g., Source1_2 represents the 2nd source dataset in Group 1. 
 - `Source Data Schema` is the schema of the source dataset to be transformed. 
 - `Source Data Description` is a domain-specific explanation of the dataset. 
 - `Schema Change Hints` are hints about changes in schema from source to target. 
