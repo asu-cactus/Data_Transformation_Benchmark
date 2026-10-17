@@ -2,7 +2,7 @@
 This repository contains the data transformation benchmark for various domains such as smart building, COVID-19 & machine logs, and commercial datasets. 
 
 ## Benchmark Datasets
-- `Smart Building`: The smart building dataset is curated from real-world domain-specific databases, including 105 cases from 21 energy companies in the United States.
+- `Smart Building`: The smart building dataset is curated from real-world domain-specific databases, including 105 cases from 21 energy companies in the United States.{[Link](https://drive.google.com/file/d/1-VWVfHxLro-7MdO9oKVwbhl9gfp9qlBL/view?usp=drive_link)}.
 
 - `COVID-19 & Machine Log` : COVID-19 datasets is real-world data repository maintained by John Hopkins University {[Link](csse_covid_19_data)}. The machine log dataset is curated from various operating systems such as MacOS, Android, etc. 
 
